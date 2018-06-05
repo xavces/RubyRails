@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: ynovcampusruby
+  api_key: '454418137513625'
+  api_secret: 2JhngZlJo7R_KeBZ6HrUN5c1i2E
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: ynovcampusruby
+  api_key: '454418137513625'
+  api_secret: 2JhngZlJo7R_KeBZ6HrUN5c1i2E
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: ynovcampusruby
+  api_key: '454418137513625'
+  api_secret: 2JhngZlJo7R_KeBZ6HrUN5c1i2E
+  enhance_image_tag: true
+  static_image_support: false

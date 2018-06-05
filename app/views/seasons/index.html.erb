@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Seasons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seasons.each do |season| %>
+      <tr>
+        <td><%= link_to season.num, Episode %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

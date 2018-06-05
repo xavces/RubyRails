@@ -1,0 +1,98 @@
+// Place all the styles related to the Series controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+  background-color: #323232;
+  color: #ddd;
+}
+
+.container {
+  /* background-color: #4F4F4F; */
+}
+
+.nav {
+  margin-top: 1rem;
+  background-color: #4F4F4F;
+  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav .login {
+  text-align: right;
+}
+
+.list-movie {
+  margin-top: 2rem;
+}
+
+.list-movie > div {
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #4F4F4F;
+  width: 20rem;
+  cursor: pointer;
+}
+
+.card .card-title {
+  text-align: center;
+}
+
+.card .card-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ban {
+  margin-top: 1rem;
+}
+
+.ban > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.ban img {
+  height: 20rem;
+}
+
+.saison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.saison button {
+  margin: 0rem 0.5rem;
+}
+
+.episode-list {
+  margin: 1rem 0rem;
+}
+
+.episode-list div {
+  margin-top: 1rem;
+}
+
+.detail {
+  margin-top: 1rem;
+}
+
+.detail img {
+  width: 100%;
+}
+
+.detail .text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+<section class="comment">
+  <blockquote>
+    <%= comment.text %>
+  </blockquote>
+  <p class="small text-right">Par <%= comment.user.username %>
+    le <%= l(comment.created_at.to_date, format: "%d/%m/%Y") %></p>
+</section>
+
+# app/views/restaurants/show.html.erb
+<div class="comments">
+  <% if @episode.comments.any? %>
+    <h2>Commentaires:</h2>
+
+    <% @episode.comments.each do |comment| %>
+      <%= render "comments/show", comment: comment %>
+    <% end %>
+  <% end %>
+</div>

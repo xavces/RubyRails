@@ -1,0 +1,39 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-12 saison">
+      </div>
+    </div>
+
+    <div class="row episode-list">
+
+      <% @seasons.each do |seasons| %>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to seasons.num, episode_path(seasons) %></h5>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+    </div>
+
+  </div>
+
+</body>
